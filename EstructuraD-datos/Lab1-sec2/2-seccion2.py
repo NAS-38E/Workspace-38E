@@ -21,3 +21,4 @@ for i in range(filas):
 print(f'\nMultiplicación de matriz por el escalar: ')
 for fila in a:
     print(fila)
+##Codigo realizado por Alex Hernandez y Nicolas Almuna 

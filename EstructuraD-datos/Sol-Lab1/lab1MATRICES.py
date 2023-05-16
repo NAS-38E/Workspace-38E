@@ -10,7 +10,7 @@ def resta(m1, m2):
 filas = int(input("ingrese la cantidad de filas de la matriz: "))
 columnas = int(input("ingrese la cantidad de columnas de la matriz: "))
 
-## Ingresar elwmentos matriz 1
+## Ingresar elementos matriz 1
 print("ingresando los elementos de la matriz 1: ")
 m1= np.zeros((filas,columnas))
 for i in range (filas):
