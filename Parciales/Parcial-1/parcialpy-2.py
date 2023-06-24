@@ -3,7 +3,7 @@ import numpy as np
 #2) Crear dos matrices 3x3 con elementos aleatorios (-5 a -10)
 mat2 = np.random.randint(-10, -4, size=(3, 3))
 mat3 = np.random.randint(-10, -4, size=(3, 3))
-#Vondicion para que tenga las mismas condiciones
+#Condicion para que tenga las mismas condiciones
 if mat2.shape[1] == mat3.shape[0]:
     # Multiplicar las dos matrices e imprimir el resultado
     result = np.matmul(mat2, mat3)
