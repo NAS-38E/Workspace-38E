@@ -2,13 +2,15 @@ class Cliente:
     def __init__(self, ticket, caja):
         self.ticket = ticket
         self.caja = caja
-#Representa un nodo en la lista circular
+
+# Representa un nodo en la lista circular
 class Nodo:
     def __init__(self, cliente):
         self.cliente = cliente
         self.siguiente = None
-#Es la lista circular
-#Este metodo crea un nodo cliente y lo agrega al final de la lista circular
+
+# Es la lista circular
+# Este metodo crea un nodo cliente y lo agrega al final de la lista circular
 class ColaAtencion:
     def __init__(self):
         self.cabeza = None
@@ -24,8 +26,9 @@ class ColaAtencion:
                 nodo_actual = nodo_actual.siguiente
             nodo_actual.siguiente = nuevo_nodo
             nuevo_nodo.siguiente = self.cabeza
-#Este metodo elimina al primer nodo de la lista circular y muestra
-#El numero de ticket y caja del cliente que esta siendo atendido
+
+# Este metodo elimina al primer nodo de la lista circular y muestra
+# El numero de ticket y caja del cliente que esta siendo atendido
     def atender_cliente(self):
         if not self.cabeza:
             print("No hay clientes en la cola")
@@ -40,9 +43,10 @@ class ColaAtencion:
                 nodo_actual = nodo_actual.siguiente
             nodo_actual.siguiente = self.cabeza.siguiente
             self.cabeza = self.cabeza.siguiente
-#Muestra la cola de atencion 
-#Este metodo recorre la lista circular desde la cabeza hasta el final
-#Imprime el numero de ticket y el numero de caja de los clientes
+    
+# Muestra la cola de atencion 
+# Este metodo recorre la lista circular desde la cabeza hasta el final
+# Imprime el numero de ticket y el numero de caja de los clientes
     def mostrar_cola(self):
         if not self.cabeza:
             print("No hay clientes en la cola")
@@ -55,7 +59,7 @@ class ColaAtencion:
                 break
             nodo_actual = nodo_actual.siguiente
 
-# Ejemplo de uso
+# Ejemplos de uso
 cliente_cola= ColaAtencion()
 cliente_cola.agregar_cliente(Cliente(6, 1))
 cliente_cola.agregar_cliente(Cliente(7, 2))
@@ -64,4 +68,5 @@ cliente_cola.mostrar_cola()
 cliente_cola.atender_cliente()
 cliente_cola.mostrar_cola()
 
-##Nicolas Almuna, Alex Hernandez, Ignacio Soto##
+# Código realizado por Álex Hernández, Ignacio Soto y Nicolás Almuna.
+
